@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/canvas/canvas",
+    "pages/animation/animation",
+    "pages/websocket/websocket"
+  ],
+  "window": {
+    "navigationBarTitleText": "websocket"
+  }
+}

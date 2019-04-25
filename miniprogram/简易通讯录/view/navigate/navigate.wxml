@@ -1,0 +1,10 @@
+<!--view/navigate/navigate.wxml-->
+<view>
+<navigator url='../../view/form/form'>form</navigator>
+<navigator url='../../view/form-picker/form-picker'>form-picker</navigator>
+<navigator url='../../view/index/index'>index</navigator>
+<navigator url='../../view/audio/audio'>audio</navigator>
+<navigator url='../../view/image/image'>image</navigator>
+<navigator url='../../view/map/map'>map</navigator>
+<navigator url='../../view/video/video'>video</navigator>
+</view>

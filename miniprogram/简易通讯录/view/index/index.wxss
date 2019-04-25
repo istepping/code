@@ -1,0 +1,11 @@
+.ipt{
+  margin: 10rpx;
+  margin-top:50rpx;
+  padding: 10rpx;
+  border-bottom: 1px solid #CCCCCC;
+}
+.theBtn{
+  margin-top: 100rpx;
+  height: 70rpx;
+  font-size: 29rpx;
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginOrPadding_10"
+        android:layout_marginLeft="@dimen/marginOrPadding_20"
+        android:layout_marginRight="@dimen/marginOrPadding_20"
+        android:layout_marginTop="@dimen/marginOrPadding_10"
+        android:background="@drawable/shape_container"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/marginOrPadding_20"
+        android:paddingTop="@dimen/marginOrPadding_30">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_avatar"
+                android:layout_width="@dimen/avatar_80"
+                android:layout_height="@dimen/avatar_80"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/default_avatar" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/marginOrPadding_20"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/drawablePadding_15"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/text3"
+                    android:textSize="@dimen/text_s" />
+
+                <TextView
+                    android:id="@+id/item_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text9"
+                    android:textSize="@dimen/text_xs" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/drawablePadding_20"
+                android:layout_marginRight="@dimen/drawablePadding_20"
+                android:drawableLeft="@drawable/cargo_time"
+                android:drawablePadding="@dimen/drawablePadding_15"
+                android:gravity="end|center_vertical"
+                android:textColor="@color/text9"
+                android:textSize="@dimen/text_xxs" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/divider_horizontal"
+            android:layout_marginTop="@dimen/marginOrPadding_30" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginOrPadding_30"
+                android:layout_marginTop="@dimen/marginOrPadding_30"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.xmw.qiyun.view.HorizontalListView
+                    android:id="@+id/item_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_38"
+                    android:layout_marginBottom="@dimen/marginOrPadding_20" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="13px"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/marginOrPadding_10"
+                        android:paddingTop="@dimen/marginOrPadding_10">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/cargo_circle" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_line_vertical"
+                            android:layerType="software" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/cargo_circle" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginOrPadding_10"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/item_location_start"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/text3"
+                            android:textSize="@dimen/text_m" />
+
+                        <TextView
+                            android:id="@+id/item_location_end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginOrPadding_20"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/text3"
+                            android:textSize="@dimen/text_m" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/marginOrPadding_30"
+                android:layout_marginLeft="@dimen/marginOrPadding_20"
+                android:layout_marginTop="@dimen/marginOrPadding_30"
+                android:background="@color/divider" />
+
+            <ImageView
+                android:id="@+id/item_call"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/marginOrPadding_35"
+                android:paddingRight="@dimen/marginOrPadding_35"
+                android:src="@drawable/call_people" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

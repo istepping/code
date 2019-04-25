@@ -1,0 +1,5 @@
+<!--view/image/image.wxml-->
+<view style='text-align:center'>
+  <image style='border:1px solid red' mode='{{modes[modeIndex]}}' src='http://r.photo.store.qq.com/psb?/V11MDig50UY3k7/2GenshPWAVFT7g7yBT08CMVElV**pssIqmeDn9FRp6c!/r/dEMBAAAAAAAA'></image>
+   <picker bindchange='pickerChangeFun' value='{{modeIndex}}' range='{{modes}}'>点击这里选择</picker>
+</view>

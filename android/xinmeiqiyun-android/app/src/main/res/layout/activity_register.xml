@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="40px"
+            android:paddingRight="40px">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginTop="60px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/register_phone"
+                    android:textColor="@color/text6"
+                    android:textSize="@dimen/text_m" />
+
+                <EditText
+                    android:id="@+id/register_phone_input"
+                    style="@style/input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15px"
+                    android:layout_weight="1"
+                    android:hint="@string/login_phone_input"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/register_image"
+                    android:textColor="@color/text6"
+                    android:textSize="@dimen/text_m" />
+
+                <EditText
+                    android:id="@+id/register_image_input"
+                    style="@style/input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15px"
+                    android:layout_weight="1"
+                    android:hint="@string/login_image_input"
+                    android:inputType="text"
+                    android:maxLength="6" />
+
+                <ImageView
+                    android:id="@+id/register_image"
+                    android:layout_width="190px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:scaleType="centerCrop" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/register_code"
+                    android:textColor="@color/text6"
+                    android:textSize="@dimen/text_m" />
+
+                <EditText
+                    android:id="@+id/register_code_input"
+                    style="@style/input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15px"
+                    android:layout_weight="1"
+                    android:hint="@string/login_code_input"
+                    android:inputType="number"
+                    android:maxLength="6" />
+
+                <com.xmw.qiyun.view.CountDownTimerButton
+                    android:id="@+id/register_code_get"
+                    android:layout_width="190px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:text="@string/login_code_get"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_m" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/showText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/text6"
+                android:textSize="@dimen/text_s" />
+
+            <TextView
+                android:id="@+id/register_confirm"
+                style="@style/confirm"
+                android:layout_marginTop="60px"
+                android:text="@string/register_confirm" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

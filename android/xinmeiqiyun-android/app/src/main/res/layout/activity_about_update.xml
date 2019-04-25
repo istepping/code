@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_background"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_common" />
+
+        <ImageView
+            android:layout_width="142px"
+            android:layout_height="142px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="95px"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20px"
+            android:text="@string/app_name"
+            android:textColor="@color/text6"
+            android:textSize="@dimen/text_s" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="13px"
+            android:textColor="@color/text6"
+            android:textSize="@dimen/text_s" />
+
+        <View
+            style="@style/divider_horizontal"
+            android:layout_marginTop="72px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/about_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/about_phone"
+                android:layout_width="match_parent"
+                android:layout_height="89px"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="20px"
+                android:paddingRight="20px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_about_phone"
+                    android:textColor="@color/text6"
+                    android:textSize="@dimen/text_s" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="20px"
+                    android:text="4001650001"
+                    android:textColor="@color/text6"
+                    android:textSize="@dimen/text_s" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/item_back" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View style="@style/divider_horizontal" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/about_text"
+                android:layout_width="match_parent"
+                android:layout_height="89px"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="20px"
+                android:paddingRight="20px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_about_text"
+                    android:textColor="@color/text6"
+                    android:textSize="@dimen/text_s" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/item_back" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View style="@style/divider_horizontal" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/update_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/update_check"
+                android:layout_width="match_parent"
+                android:layout_height="89px"
+                android:background="@color/white"
+                android:paddingLeft="20px"
+                android:paddingRight="20px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_update_check"
+                    android:textColor="@color/text6"
+                    android:textSize="@dimen/text_s" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/item_back" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View style="@style/divider_horizontal" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include
+        layout="@layout/view_update"
+        android:visibility="gone" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

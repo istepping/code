@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_wrap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/divider"
+    android:padding="1px">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@color/white"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="15px"
+        android:paddingRight="15px"
+        android:singleLine="true"
+        android:textColor="@drawable/selector_location_text"
+        android:textSize="@dimen/text_m" />
+
+</com.zhy.autolayout.AutoFrameLayout>

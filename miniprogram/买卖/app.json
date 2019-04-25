@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/order/order",
+    "pages/chat/chat",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1E90FF",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "外卖",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#878787",
+    "selectedColor": "#1E90FF",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "主页",
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/home0.png"
+    },
+    {
+      "pagePath":"pages/order/order",
+      "text":"订单",
+      "iconPath": "image/order.png",
+      "selectedIconPath": "image/order0.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "image/mine.png",
+      "selectedIconPath": "image/mine0.png"
+    }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug":true
+}

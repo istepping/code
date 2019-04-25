@@ -1,0 +1,3 @@
+<!--pages/animation/animation.wxml-->
+<view class=".aniDom" animation="{{animationData}}"></view>
+<button bindtap='biggerFun'>放大</button>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/option_single_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/marginOrPadding_60"
+        android:paddingLeft="@dimen/marginOrPadding_20"
+        android:paddingRight="@dimen/marginOrPadding_20">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginOrPadding_40"
+            android:text="@string/location_please_select"
+            android:textColor="@color/text3"
+            android:textSize="@dimen/text_m" />
+
+        <GridView
+            android:id="@+id/option_single_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginOrPadding_20"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/marginOrPadding_20"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/marginOrPadding_20" />
+
+        <TextView
+            android:id="@+id/option_single_cancel"
+            style="@style/confirm"
+            android:layout_marginTop="@dimen/marginOrPadding_40"
+            android:text="@string/cancel" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

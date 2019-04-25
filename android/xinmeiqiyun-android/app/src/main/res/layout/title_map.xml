@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_110"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/marginOrPadding_20"
+        android:paddingRight="@dimen/marginOrPadding_20">
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/title_left"
+            android:layout_width="@dimen/width_100"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/title_back_white" />
+
+            <TextView
+                android:id="@+id/title_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="@dimen/drawablePadding_10"
+                android:drawableRight="@drawable/pull_down_white"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/cargo_nation"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_xs" />
+
+        </com.zhy.autolayout.AutoFrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_text" />
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/title_button"
+            android:layout_width="@dimen/width_100"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/title_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:drawablePadding="@dimen/drawablePadding_10"
+                android:drawableTop="@drawable/truck_list"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_xxs" />
+
+        </com.zhy.autolayout.AutoFrameLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

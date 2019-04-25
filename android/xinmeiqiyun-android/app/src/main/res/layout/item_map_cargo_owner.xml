@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/map_cargo_owner">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="222dp"
+        android:layout_height="122dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/marginOrPadding_20"
+        android:paddingTop="@dimen/marginOrPadding_20">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/top_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/item_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/default_avatar" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2.5dp"
+                    android:paddingTop="2.5dp">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/item_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:drawablePadding="@dimen/drawablePadding_10"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/text3"
+                            android:textSize="@dimen/text_s" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <ImageView
+                        android:id="@+id/item_close"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/close" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <TextView
+                    android:id="@+id/item_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/text6"
+                    android:textSize="@dimen/text_s" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/divider_horizontal"/>
+
+        <TextView
+            android:id="@+id/item_contact"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="@string/cargo_detail_contact"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/text_xs" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoFrameLayout>

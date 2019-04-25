@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/marginOrPadding_30">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text3"
+            android:textSize="@dimen/text_m" />
+
+        <TextView
+            android:id="@+id/dialog_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginOrPadding_20"
+            android:textColor="@color/text9"
+            android:textSize="@dimen/text_m" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginOrPadding_20"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/dialog_input"
+            android:layout_width="400px"
+            android:layout_height="90px"
+            android:background="@color/edit_background"
+            android:gravity="center_vertical"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/marginOrPadding_20"
+            android:paddingRight="@dimen/marginOrPadding_20"
+            android:textSize="@dimen/text_m" />
+
+        <TextView
+            android:id="@+id/dialog_add"
+            android:layout_width="120px"
+            android:layout_height="90px"
+            android:layout_marginLeft="@dimen/marginOrPadding_20"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="@string/dialog_add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_m" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginOrPadding_20"
+        android:textColor="@color/text9"
+        android:textSize="@dimen/text_s" />
+
+    <GridView
+        android:id="@+id/dialog_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginOrPadding_20"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/marginOrPadding_20"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/marginOrPadding_20" />
+
+    <View
+        style="@style/divider_horizontal"
+        android:layout_marginTop="@dimen/marginOrPadding_20" />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="@dimen/marginOrPadding_20"
+        android:background="@color/blue"
+        android:padding="1px">
+
+        <TextView
+            android:id="@+id/dialog_close"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/dialog_close"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_m" />
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

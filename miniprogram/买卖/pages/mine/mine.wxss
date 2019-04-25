@@ -1,0 +1,65 @@
+page{
+  background-color: #F0F0F0;
+}
+.mine-container{
+  height: 100%;
+  width: 98%;
+  margin-left: 10rpx;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #F0F0F0;  */
+}
+.userInfo{
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E8E8E8;
+}
+.userInfo-img{
+  height: 128rpx;
+  width: 128rpx;
+  border-radius: 50%;
+  margin-top: 11rpx;
+}
+.userInfo-nickName{
+  margin-left: 20rpx;
+  margin-top: 50rpx;
+}
+.mine{
+  background-color: #FFFFFF;
+  margin-top: 50rpx;
+}
+.mine .text{
+  height: 80rpx;
+  width:100%;
+  border-bottom: 1px solid #E8E8E8;
+  padding-left: 10rpx;
+  padding-top: 25rpx;
+}
+.mine .text:first-child
+{
+  border-top: 1px solid #E8E8E8;
+}
+.mine .text::before{
+  content: '>';
+  float: right;
+  margin-right: 20rpx;
+}
+.setting{
+  margin-top: 50rpx;
+  height: 80rpx;
+  width: 100%;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+  background-color: #FFFFFF;
+}
+.setting .settingText{
+  margin-left: 10rpx;
+  margin-top: 30rpx;
+}
+.setting .rightText{
+  float: right;
+  margin-right: 10rpx;
+  margin-top: 10rxp;
+}

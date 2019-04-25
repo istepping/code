@@ -1,0 +1,4 @@
+$font-size:20;
+@function pr($px) {
+    @return $px / $font-size * 1rem;
+}

@@ -1,0 +1,12 @@
+<!--view/video/video.wxml-->
+<video id='theVideo'
+       style='width:100%'
+       enable-danmu='true'
+       danmu-list='{{textList}}'
+       src='{{videoSrc}}'
+></video>
+<form bindsubmit='submitFun'>
+ <input style='border:1px solid #CCCCCC;margin:5rpx' name="danmuText" value='{{inputText}}' auto-focus='true'></input>
+ <button form-type='submit'>点击发送弹幕</button>
+</form>
+<button style='margin-top:30rpx' bindtap='getLocalVideoFun'>获取设备视频</button>

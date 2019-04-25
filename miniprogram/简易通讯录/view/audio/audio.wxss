@@ -1,0 +1,10 @@
+/* view/audio/audio.wxss */
+.base{
+  text-align: center;
+  margin-top: 40rpx;
+}
+.btn{
+  margin-top: 40rpx;
+  margin: auto;
+  text-align: center;
+}

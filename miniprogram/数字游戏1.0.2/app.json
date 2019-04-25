@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/home/home"
+  ],
+  "window":{
+      "navigationBarBackgroundColor": "#1E90FF",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "数字游戏",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light"
+  }
+}

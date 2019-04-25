@@ -1,0 +1,148 @@
+<resources>
+
+    <!--默认Style-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--欢迎页面Style-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--文字标题栏Style-->
+    <style name="title_text">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_xl</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--主页面Tab按钮Style-->
+    <style name="tab_home">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--发布Tab按钮Style-->
+    <style name="tab_publish">
+        <item name="android:layout_width">152px</item>
+        <item name="android:layout_height">58px</item>
+        <item name="android:textSize">@dimen/text_s</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--列表项边框容器Style-->
+    <style name="border_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/shape_item</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5px</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/text_xs</item>
+    </style>
+
+    <style name="input">
+        <item name="android:paddingLeft">20px</item>
+        <item name="android:paddingRight">20px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/text_m</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:background">@color/edit_background</item>
+    </style>
+
+    <style name="input_white">
+        <item name="android:paddingLeft">20px</item>
+        <item name="android:paddingRight">20px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/text_m</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="text_white">
+        <item name="android:paddingLeft">20px</item>
+        <item name="android:paddingRight">20px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/text_m</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="location_select_text">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">20px</item>
+        <item name="android:paddingRight">20px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_m</item>
+        <item name="android:textColor">@color/text3</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <style name="divider_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <style name="confirm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_90</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_m</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_button</item>
+    </style>
+
+    <style name="LoadingDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_check_box</item>
+    </style>
+
+    <declare-styleable name="LoadingView">
+        <attr name="ballColor" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+</resources>

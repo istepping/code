@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/rec/rec",
+    "pages/me/me"
+  ],
+  "window":{
+    "navigationBarTitleText": "微信商店"
+  },
+  "tabBar":{
+    "selectedColor": "#3cc51f",
+    "list":[
+      {
+        "pagePath":"pages/home/home",
+        "text":"主页"
+      },
+      {
+        "pagePath":"pages/rec/rec",
+        "text":"推荐"
+      },
+      {
+        "pagePath":"pages/me/me",
+        "text":"我"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug":true
+}

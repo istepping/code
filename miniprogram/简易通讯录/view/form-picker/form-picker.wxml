@@ -1,0 +1,33 @@
+<picker mode='selector' range='{{sex}}' value='0' bindchange='selectChange'>
+  您选择的性别为:{{sex[selectedSexIndex]}}
+</picker>
+<picker mode='time' value='{{time}}' start='{{timeStart}}' end='{{timeEnd}}' bindchange='selectTimeChange'>
+  您选择的时间为:{{time}}
+</picker>
+<picker mode='date' value='{{date}}' start='{{dateStart}}' end='dateEnd' fields='{{fields}}' bindchange='selectDateChange'>
+  您选择的日期为:{{date}}
+</picker>
+<view>
+  <view class='section'>
+    input输入框
+    <input class='inputStyle' value='{{initValue}}' type='{{iTypes[pickedTypeIndex]}}' password='{{isPassword}}' placeholder='{{placeholderText}}' disabled='{{isDisabled}}' maxlength='{{maxLength}}' auto-focus='{{isAutoFocus}}' focus='{{isFocus}}' bindfocus='inputFocusEvent'
+      bindblur='inputBlurEvent' bindinput='inputKeypressEvent' />
+  </view>
+  <view class='section'>
+       <picker mode="selector" range='{{iTypes}}' value='0' bindchange='pickerChangeEvent'>
+       <button size='mini'>点击选择样式框</button>
+       </picker>
+  </view>
+  <view class='section'>
+  <label for="ispassword">是否为密码</label>
+  <switch id='ispassword'class="switchStyle" bindchange='switchPwdChangeEvent'></switch>
+  </view>
+  <view class='section'>
+  <label for='isIsDisabled'>是否禁用</label>
+  <switch id='isIsdisabled' class='switchStyle' bindchange='switchDisChangeEvent'></switch>
+  </view>
+  <view class='section'>
+  输入最大字符
+  <slider min='0' max='20' show-value='true' value='20' bindchange='sliderChangeEvent'></slider>
+  </view>
+</view>

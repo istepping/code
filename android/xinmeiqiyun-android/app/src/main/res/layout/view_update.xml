@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/update_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:background="@drawable/shape_container"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60px"
+            android:drawablePadding="15px"
+            android:drawableTop="@drawable/update_icon"
+            android:text="@string/setting_update_text"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_m" />
+
+        <TextView
+            android:id="@+id/update_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30px"
+            android:textColor="@color/text6"
+            android:textSize="@dimen/text_s" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:text="@string/setting_update_title"
+            android:textColor="@color/text6"
+            android:textSize="@dimen/text_s" />
+
+        <TextView
+            android:id="@+id/update_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:textColor="@color/text6"
+            android:textSize="@dimen/text_s" />
+
+        <View
+            style="@style/divider_horizontal"
+            android:layout_marginTop="40px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/update_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/setting_update_cancel"
+                android:textColor="@color/text3" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/update_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/setting_update_ok"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoFrameLayout>

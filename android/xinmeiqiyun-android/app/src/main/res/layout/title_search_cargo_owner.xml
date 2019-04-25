@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_90"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/marginOrPadding_10"
+        android:paddingLeft="@dimen/marginOrPadding_20"
+        android:paddingRight="@dimen/marginOrPadding_20"
+        android:paddingTop="@dimen/marginOrPadding_10">
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="@dimen/drawablePadding_10"
+            android:drawableRight="@drawable/pull_down_gray"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/cargo_nation"
+            android:textColor="@color/text9"
+            android:textSize="@dimen/text_xs" />
+
+        <com.xmw.qiyun.view.ClearEditText
+            android:id="@+id/company"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/marginOrPadding_20"
+            android:layout_weight="1"
+            android:background="@drawable/shape_input"
+            android:drawableLeft="@drawable/cargo_input"
+            android:drawablePadding="@dimen/drawablePadding_10"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="@string/cargo_company"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/marginOrPadding_20"
+            android:paddingRight="@dimen/marginOrPadding_20"
+            android:singleLine="true"
+            android:textColor="@color/text6"
+            android:textColorHint="@color/text9"
+            android:textSize="@dimen/text_xs" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,288 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xmw.qiyun">
+
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置相机权限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序设置内置sd卡的读权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序修改WiFi状态和身份-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序拨打电话-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--允许一个程序访问精良位置(如GPS)-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--允许一个程序获取信息有关当前或最近运行的任务，一个缩略的任务状态，是否活动等等-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--允许一个程序打开窗口使用 TYPE_SYSTEM_ALERT，显示在其他所有程序的顶层-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:icon">
+
+        <!--设计图尺寸-->
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <!--地图Key-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f7c83d2d6fb6461c5b3eba787cf78397" />
+
+        <!--地图定位Service-->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!--支付宝支付相关-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!--支付宝支付相关-->
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!--微信支付相关-->
+        <activity
+            android:name="com.xmw.qiyun.wxapi.WXPayEntryActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+
+        <!--欢迎页-->
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:host="www.xinmeiqiyun.com/" />
+            </intent-filter>
+
+        </activity>
+
+        <!--广告页-->
+        <activity
+            android:name=".ui.welcome.WelcomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!--登陆页-->
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--注册页-->
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--认证页-->
+        <activity
+            android:name=".ui.verify.VerifyActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--认证页／个人信息-->
+        <activity
+            android:name=".ui.verify.verifyPersonal.VerifyPersonalActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--认证页／公司信息-->
+        <activity
+            android:name=".ui.verify.verifyCompany.VerifyCompanyActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--信息页-->
+        <activity
+            android:name=".ui.information.InformationActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".ui.store.StoreActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--设置页-->
+        <activity
+            android:name=".ui.setting.SettingActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--关于我们，版本升级-->
+        <activity
+            android:name=".ui.setting.aboutAndUpdate.AboutAndUpdateActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--首页-->
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <!--车源详情-->
+        <activity
+            android:name=".ui.truck.truckDetail.TruckDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--发货详情-->
+        <activity
+            android:name=".ui.publish.publishDetail.PublishDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--发货分享-->
+        <activity
+            android:name=".ui.publish.publishShare.PublishShareActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--货源详情-->
+        <activity
+            android:name=".ui.cargo.cargoDetail.CargoDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--货主详情-->
+        <activity
+            android:name=".ui.cargo.cargoOwner.CargoOwnerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--地图页-->
+        <activity
+            android:name=".ui.map.MapActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--单行文本输入-->
+        <activity
+            android:name=".ui.inputSingle.InputSingleActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--多行文本输入-->
+        <activity
+            android:name=".ui.inputMulti.InputMultiActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--显示文本-->
+        <activity
+            android:name=".ui.showText.ShowTextActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--测试专用-->
+        <activity
+            android:name=".ui.test.TestActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--图片处理入口-->
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <!--数据服务-->
+        <service android:name="com.xmw.qiyun.service.StandardService" />
+
+        <!--定位服务-->
+        <service android:name="com.xmw.qiyun.service.PositionService" />
+
+    </application>
+
+</manifest>

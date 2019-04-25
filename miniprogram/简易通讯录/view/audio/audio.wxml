@@ -1,0 +1,15 @@
+<!--view/audio/audio.wxml-->
+<view class='base'>
+  <audio id='theAudio'
+         controls='true'
+         src='  http://sc1.111ttt.cn/2016/1/06/09/199092147496.mp3'
+         binderror='errFun'
+         bindplay='playFun'
+         bindpause='pauseFun'
+         bindtimeupdate='timeUpdateFun'
+         bindended='endedFun'
+  ></audio>
+  <button class='btn' bindtap='playEvent'>播放</button>
+  <button calss='btn' bindtap='pauseEvent'>暂停</button>
+  <button class='btn' bindtap='seekEvent'>播放到指定位置</button>
+</view>

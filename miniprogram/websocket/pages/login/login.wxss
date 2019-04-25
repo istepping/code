@@ -1,0 +1,5 @@
+/* pages/login/login.wxss */
+.main{
+  margin-top: 30rpx;
+  text-align: center;
+}

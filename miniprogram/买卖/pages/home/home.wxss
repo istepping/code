@@ -1,0 +1,123 @@
+.location{
+  width: 46%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 3rpx;
+  margin-left: 5rpx;
+}
+.search{
+  /* 自身大小 */
+  width: 46%;
+  height: 1.5rem;
+  /* 所处位置 */
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  /* 样式 */
+  border-radius: 10px;
+  background-color: #E8E8E8;
+}
+.search_input{
+  width: 88%;
+  height: 1.2rem;
+
+  position: absolute;
+  top: 0px;
+  right: 1px;
+
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+
+  /* 文字样式 */
+  padding-left: 12%;
+}
+.search_log{
+  width: 1rem;
+  height: 1rem;
+  margin-right: 50rpx;
+  margin-top: 10rpx;
+}
+
+.sorts{
+  height: 400rpx;
+  margin-top: 10rpx;
+}
+.sorts swiper-item{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.sorts .sort{
+  margin: 10rpx auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width:25%;
+
+  text-align: center;
+}
+.sorts .sort image{
+  margin:0 auto;
+  width: 100rpx;
+  height: 100rpx;
+}
+.sorts .sort text{
+  font-size:10pt;
+}
+.line{
+  height: 6%;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: #1E90FF;
+  border-top: 10px solid #E8E8E8;
+}
+.near{
+  height: 60rpx;
+  width: 100%;
+  border-top: 1rpx solid #efefef;
+  border-bottom:1rpx solid #efefef;
+  display: flex;
+  flex-direction: row;
+
+  text-align: center;
+}
+.near .sort{
+  width: 33%;
+  line-height: 70rpx;
+  margin: auto;
+}
+.near .sort.checked{
+  width: 33%;
+  line-height: 70rpx;
+  margin: auto;
+  color: #1E90FF;
+}
+.goods{
+  width: 100%;
+}
+.goods .good{
+  width: 100%;
+  height:240rpx;
+  border-bottom: 1rpx solid #efefef;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.goods .good .left{
+  width:25%;
+  height: 100%;
+}
+.goods .good .left .img{
+  width: 100%;
+  height: 50%;
+}
+.goods .good .right{
+  height: 100%;
+}

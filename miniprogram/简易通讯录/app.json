@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "view/navigate/navigate",
+    "view/map/map",
+    "view/image/image",
+    "view/video/video",
+    "view/audio/audio",
+    "view/form-picker/form-picker",
+    "view/form/form",
+    "view/index/index"
+  ],
+  "window":{
+    "navigationBarTitleText": "简易通讯录"
+  }
+}

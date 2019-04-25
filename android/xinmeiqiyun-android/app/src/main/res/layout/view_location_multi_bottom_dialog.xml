@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_multi_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/marginOrPadding_20"
+            android:paddingRight="@dimen/marginOrPadding_20"
+            android:paddingBottom="@dimen/marginOrPadding_60">
+
+            <TextView
+                android:id="@+id/location_multi_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOrPadding_40"
+                android:textColor="@color/text3"
+                android:textSize="@dimen/text_m" />
+
+            <GridView
+                android:id="@+id/location_multi_top_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOrPadding_20"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/marginOrPadding_20"
+                android:numColumns="5"
+                android:stretchMode="columnWidth" />
+
+            <View
+                style="@style/divider_horizontal"
+                android:layout_marginTop="@dimen/marginOrPadding_20" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOrPadding_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/location_please_select"
+                    android:textColor="@color/text3"
+                    android:textSize="@dimen/text_m" />
+
+                <ImageView
+                    android:id="@+id/location_multi_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/level_back" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <GridView
+                android:id="@+id/location_multi_bottom_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOrPadding_20"
+                android:gravity="center"
+                android:numColumns="5"
+                android:stretchMode="columnWidth" />
+
+            <TextView
+                android:id="@+id/location_multi_ok"
+                style="@style/confirm"
+                android:layout_marginTop="@dimen/marginOrPadding_40"
+                android:text="@string/ok" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,17 @@
+.section{
+  margin-top: 70rpx;
+  text-align: center;
+}
+.inputStyle{
+  width: 95%;
+  height:70rpx;
+  margin: auto;
+  margin-top: 20rpx;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  text-align: left;
+}
+.switchStyle{
+  vertical-align: middle;
+  padding-left: 50rpx;
+}

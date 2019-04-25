@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_common" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="421px"
+        android:background="@color/blue" />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginOrPadding_20"
+        android:layout_marginRight="@dimen/marginOrPadding_20"
+        android:layout_marginTop="-360px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape_container"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/truck_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOrPadding_110"
+                android:textColor="@color/text3"
+                android:textSize="@dimen/text_m" />
+
+            <TextView
+                android:id="@+id/truck_detail_num"
+                android:layout_marginTop="@dimen/marginOrPadding_35"
+                style="@style/border_item" />
+
+            <View
+                style="@style/divider_horizontal"
+                android:layout_marginLeft="@dimen/marginOrPadding_30"
+                android:layout_marginRight="@dimen/marginOrPadding_30"
+                android:layout_marginTop="@dimen/marginOrPadding_35" />
+
+            <TextView
+                android:id="@+id/truck_detail_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginOrPadding_40"
+                android:layout_marginRight="@dimen/marginOrPadding_40"
+                android:layout_marginTop="@dimen/marginOrPadding_50"
+                android:drawableLeft="@drawable/cargo_master_phone"
+                android:drawablePadding="@dimen/drawablePadding_15"
+                android:gravity="center_vertical"
+                android:textColor="@color/text6"
+                android:textSize="@dimen/text_s" />
+
+            <TextView
+                android:id="@+id/truck_detail_property"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginOrPadding_40"
+                android:layout_marginRight="@dimen/marginOrPadding_40"
+                android:layout_marginTop="@dimen/marginOrPadding_30"
+                android:drawableLeft="@drawable/truck_detail_property"
+                android:drawablePadding="@dimen/drawablePadding_15"
+                android:gravity="center_vertical"
+                android:textColor="@color/text6"
+                android:textSize="@dimen/text_s" />
+
+            <TextView
+                android:id="@+id/truck_detail_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginOrPadding_40"
+                android:layout_marginRight="@dimen/marginOrPadding_40"
+                android:layout_marginTop="@dimen/marginOrPadding_30"
+                android:drawableLeft="@drawable/truck_detail_city"
+                android:drawablePadding="@dimen/drawablePadding_15"
+                android:gravity="center_vertical"
+                android:textColor="@color/text6"
+                android:textSize="@dimen/text_s" />
+
+            <TextView
+                android:id="@+id/truck_detail_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginOrPadding_50"
+                android:layout_marginLeft="@dimen/marginOrPadding_40"
+                android:layout_marginRight="@dimen/marginOrPadding_40"
+                android:layout_marginTop="@dimen/marginOrPadding_30"
+                android:drawableLeft="@drawable/truck_detail_time"
+                android:drawablePadding="@dimen/drawablePadding_15"
+                android:gravity="center_vertical"
+                android:textColor="@color/text6"
+                android:textSize="@dimen/text_s" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/avatar_background">
+
+            <ImageView
+                android:id="@+id/truck_detail_avatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/default_avatar"/>
+
+            <ImageView
+                android:id="@+id/truck_detail_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

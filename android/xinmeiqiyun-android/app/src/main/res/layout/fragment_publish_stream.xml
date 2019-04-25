@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:superlistview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background">
+
+    <com.quentindommerc.superlistview.SuperListview
+        android:id="@+id/publish_stream_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        superlistview:superlv__listClipToPadding="false"
+        superlistview:superlv__scrollbarStyle="outsideOverlay" />
+
+</com.zhy.autolayout.AutoFrameLayout>

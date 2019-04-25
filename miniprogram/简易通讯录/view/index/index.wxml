@@ -1,0 +1,17 @@
+<view>
+<scroll-view scroll-y="true" style='height:100rpx'>
+  <view wx:for="{{contactData}}" wx:key="id">
+    <text>{{item.id}} </text>
+    <text>{{item.name}} </text>
+    <text>{{item.phone}} </text>
+    <text>{{item.birthday}} </text>
+    <icon data-index='{{index}}' type='cancel' size='14' bindtap='deleteMe'></icon>
+  </view>
+</scroll-view>
+<form bindsubmit='submitFun'>
+   <input class='ipt' name="name" type='text' placeholder='请输入用户名'></input>
+   <input calss='ipt' name="phone" type='text' placeholder='请输入手机号'></input>
+   <input calss='ipt' name="birthday" type='text' placeholder='请输入出生年份'></input>
+   <button class='theBtn' form-type='submit'>新增</button>
+</form>
+</view>

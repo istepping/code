@@ -1,0 +1,46 @@
+<!-- WebSocket消息发送 -->
+<view class='top'>
+<form bindsubmit='submitFun'>
+  <input class='inputStyle' name="message" placeholder='发送消息内容'></input>
+   <button form-type='submit'>发送</button>
+</form>
+</view>
+
+<!-- 发送一个get请求 -->
+<view class='top'>
+   <button bindtap='requestGetFun'>发送一个get请求</button>
+</view>
+
+<view class='top'>
+  <button bindtap='closeWebSocketFun'>关闭WebSocket连接</button>
+</view>
+
+<!-- 选择本地图片并选择 -->
+<view class='top'>
+   <image class='imgStyle' mode='aspectFit' wx:if="{{isShowImage}}" src='{{imgSrc}}' height="100%"></image>
+  <button bindtap='chooseImageFun'>选择图片</button>
+</view>
+
+<!-- 选择本地视屏播放 -->
+<view class='top'>
+  <video wx:if="{{isShowVideo}}" src='{{videoSrc}}' controls='true'></video>
+  <button bindtap='chooseVideoFun'>选择本地视频</button>
+</view>
+
+<!-- 实现预览图片的功能 -->
+<view class='top'>
+  <button bindtap='previewImageFun'>预览图片</button>
+</view>
+
+<!-- 实现录音功能 -->
+<view class='top'>
+  <button size='mini' bindtap='startRecordFun'>录音开始</button>
+  <button size='mini' style='margin-left:20rpx' bindtap='stopRecordFun'>录音结束</button>
+</view>
+
+<!-- 实现录音的播放、暂停和停止 -->
+<view class='top'>
+   <button size='mini' bindtap='playRecordVoice'>播放录音</button>
+   <button size='mini' bindtap='pauseRecordVoice'>暂停录音</button>
+   <button size='mini' bindtap='stopRecordVoice' style='margin-left:20rpx'>停止录音</button>
+</view>

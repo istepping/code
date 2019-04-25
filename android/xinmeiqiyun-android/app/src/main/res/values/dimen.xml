@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_xx_xs">20px</dimen>
+    <dimen name="text_xxs">22px</dimen>
+    <dimen name="text_xs">24px</dimen>
+    <dimen name="text_s">28px</dimen>
+    <dimen name="text_m">30px</dimen>
+    <dimen name="text_l">32px</dimen>
+    <dimen name="text_xl">36px</dimen>
+    <dimen name="text_xxl">40px</dimen>
+
+    <dimen name="avatar_52">52px</dimen>
+    <dimen name="avatar_80">80px</dimen>
+    <dimen name="avatar_100">100px</dimen>
+    <dimen name="avatar_115">115px</dimen>
+    <dimen name="avatar_140">140px</dimen>
+    <dimen name="avatar_160">160px</dimen>
+    <dimen name="call">55px</dimen>
+
+    <dimen name="marginOrPadding_5">5px</dimen>
+    <dimen name="marginOrPadding_10">10px</dimen>
+    <dimen name="marginOrPadding_15">15px</dimen>
+    <dimen name="marginOrPadding_20">20px</dimen>
+    <dimen name="marginOrPadding_30">30px</dimen>
+    <dimen name="marginOrPadding_32">32px</dimen>
+    <dimen name="marginOrPadding_33">33px</dimen>
+    <dimen name="marginOrPadding_35">35px</dimen>
+    <dimen name="marginOrPadding_40">40px</dimen>
+    <dimen name="marginOrPadding_45">45px</dimen>
+    <dimen name="marginOrPadding_50">50px</dimen>
+    <dimen name="marginOrPadding_60">60px</dimen>
+    <dimen name="marginOrPadding_80">80px</dimen>
+    <dimen name="marginOrPadding_110">110px</dimen>
+
+    <dimen name="drawablePadding_10">5dp</dimen>
+    <dimen name="drawablePadding_15">7.5dp</dimen>
+    <dimen name="drawablePadding_20">10dp</dimen>
+
+    <dimen name="width_35">35px</dimen>
+    <dimen name="width_100">100px</dimen>
+    <dimen name="width_113">113px</dimen>
+    <dimen name="width_200">200px</dimen>
+    <dimen name="width_445">445px</dimen>
+
+    <dimen name="height_32">32px</dimen>
+    <dimen name="height_38">38px</dimen>
+    <dimen name="height_40">40px</dimen>
+    <dimen name="height_50">50px</dimen>
+    <dimen name="height_60">60px</dimen>
+    <dimen name="height_80">80px</dimen>
+    <dimen name="height_90">90px</dimen>
+    <dimen name="height_110">110px</dimen>
+    <dimen name="height_175">175px</dimen>
+    <dimen name="height_244">244px</dimen>
+    <dimen name="height_333">333px</dimen>
+    <dimen name="height_746">746px</dimen>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_110"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/marginOrPadding_20"
+        android:paddingRight="@dimen/marginOrPadding_20">
+
+        <View
+            android:layout_width="@dimen/width_100"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_text" />
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/title_button"
+            android:layout_width="@dimen/width_100"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:drawablePadding="@dimen/drawablePadding_10"
+                android:drawableTop="@drawable/truck_map"
+                android:text="@string/map_vehicle_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_xxs" />
+
+        </com.zhy.autolayout.AutoFrameLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

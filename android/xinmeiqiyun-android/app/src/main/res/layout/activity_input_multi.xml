@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_button" />
+
+    <EditText
+        android:id="@+id/input_min"
+        style="@style/input_white"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:hint="@string/publish_cargo_num_min"
+        android:inputType="numberDecimal" />
+
+    <View style="@style/divider_horizontal" />
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="50px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        android:background="@color/divider" />
+
+    <View
+        style="@style/divider_horizontal"
+        android:layout_marginTop="20px" />
+
+    <EditText
+        android:id="@+id/input_max"
+        style="@style/input_white"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:hint="@string/publish_cargo_num_max"
+        android:inputType="numberDecimal" />
+
+    <View style="@style/divider_horizontal" />
+
+</com.zhy.autolayout.AutoLinearLayout>

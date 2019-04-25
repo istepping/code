@@ -1,0 +1,35 @@
+<view class='location' bindtap='getLocation'>{{address}}</view>
+<view class='search'>
+<image src="http://r.photo.store.qq.com/psb?/V11MDig50UY3k7/2GenshPWAVFT7g7yBT08CMVElV**pssIqmeDn9FRp6c!/r/dEMBAAAAAAAA" class="search_log"></image>
+<input class="search_input" type='text' placeholder='搜索商家/商品' maxlength='140' bindchange="inputChangeFun"></input>
+</view>
+
+<scroll-view scroll-y bindcroll='scrollFun' upper-threshold='55' bindscrolltoupper='scrolltoupperFun' lower-threshold='55' bindscrolltolower='scrolltolowerFun' enable-back-to-top>
+   <swiper class='sorts' indicator-dots indicator-color='#E8E8E8' indicator-active-color='#1E90FF' autoplay='true' interval='5000' duration='500'>
+      <swiper-item wx:for='{{sorts}}' wx:for-item="icons" wx:for-index='id'>
+      <view class='sort' wx:for='{{icons}}' wx:for-item='icon' wx:for-index='id'>
+        <image src='{{icon.icon}}'></image>
+        <text>{{icon.name}}</text>
+      </view>
+      </swiper-item>
+   </swiper>
+
+   <view class='line'>————附近商家————</view>
+
+   <view class='near'>
+     <view class="sort {{checkedID==1?'checked':''}}" data-id='1' bindtap='checkedFun'>综合排序</view>
+     <view class="sort {{checkedID==2?'checked':''}}" data-id='2' bindtap='checkedFun'>销量最高</view>
+     <view class="sort {{checkedID==3?'checked':''}}" data-id='3' bindtap='checkedFun'>距离最近</view>
+   </view>
+
+   <view class='goods'>
+     <view class='good' wx:for='{{goods}}' wx:for-item='good' wx:for-index='id' bindtap='goodDetailFun'>
+     <view class='left'>
+     <image class='img' src='{{good.img}}'></image>
+     </view>
+     <view calss='right'>
+     <text class='name'>{{good.name}}</text>
+     </view>
+     </view> 
+   </view>
+</scroll-view>

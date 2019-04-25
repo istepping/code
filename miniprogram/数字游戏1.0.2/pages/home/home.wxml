@@ -1,0 +1,27 @@
+<view class='containter'>
+<view class='top'>
+<image class='img1' src='../../images/rule.png' bindtap='lookRule'></image>
+<image class='img2' src='../../images/key.png' bindtap='lookKey'></image>
+</view>
+<view class='line1'>
+<button class='btn' disabled='{{disabled1}}' data-id='1' bindtap='btn'>{{btn1}}</button>
+<button class='btn' disabled='{{disabled2}}' data-id='2' bindtap='btn'>{{btn2}}</button>
+<button class='btn' disabled='{{disabled3}}' data-id='3' bindtap='btn'>{{btn3}}</button>
+<button class='btn' disabled='{{disabled4}}' data-id='4' bindtap='btn'>{{btn4}}</button>
+</view>
+<view class='line2'>
+<button class='btn' data-id='5' bindtap='btn'>+</button>
+<button class='btn' data-id='6' bindtap='btn'>-</button>
+<button class='btn' data-id='7' bindtap='btn'>*</button>
+<button class='btn' data-id='8' bindtap='btn'>/</button>
+<button class='btn' data-id='9' bindtap='btn'>(</button>
+<button class='btn' data-id='10' bindtap='btn'>)</button>
+</view>
+<input class='input' disabled='true'>{{input}}</input>
+<view class='line3'>
+<button class='btn' data-id='11' bindtap='btn'>撤销</button>
+<button class='btn' bindtap='btn2'>确定</button>
+</view>
+<button class='line4_button' style='background-color:#1E90FF;' bindtap='next' wx:if='{{isTrue}}'>下一关</button>
+<view class='line4_text' wx:else>第{{current}}关</view>
+</view>

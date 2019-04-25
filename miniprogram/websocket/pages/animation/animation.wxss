@@ -1,0 +1,7 @@
+/* pages/animation/animation.wxss */
+.aniDom{
+  margin: 200rpx auto;
+  height:100rpx;
+  width: 300rpx;
+  background-color: cadetblue;
+}

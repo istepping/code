@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/marginOrPadding_60"
+            android:paddingLeft="@dimen/marginOrPadding_20"
+            android:paddingRight="@dimen/marginOrPadding_20"
+            android:paddingTop="@dimen/marginOrPadding_20">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="55px"
+                    android:layout_height="match_parent"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:text="@string/publish_cargo_address_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_m"
+                    android:textStyle="bold" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <View style="@style/divider_horizontal" />
+
+                    <EditText
+                        android:id="@+id/publish_cargo_start_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/item_back"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/publish_cargo_start_title"
+                        android:maxLines="1"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px"
+                        android:singleLine="true"
+                        android:textColor="@color/text3"
+                        android:textColorHint="@color/text9"
+                        android:textSize="@dimen/text_s" />
+
+                    <View style="@style/divider_horizontal" />
+
+                    <EditText
+                        android:id="@+id/publish_cargo_start_detail_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/item_back"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/publish_cargo_start_detail_title"
+                        android:maxLines="1"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px"
+                        android:singleLine="true"
+                        android:textColor="@color/text3"
+                        android:textColorHint="@color/text9"
+                        android:textSize="@dimen/text_s" />
+
+                    <View style="@style/divider_horizontal" />
+
+                    <EditText
+                        android:id="@+id/publish_cargo_end_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/item_back"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/publish_cargo_end_title"
+                        android:maxLines="1"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px"
+                        android:singleLine="true"
+                        android:textColor="@color/text3"
+                        android:textColorHint="@color/text9"
+                        android:textSize="@dimen/text_s" />
+
+                    <View style="@style/divider_horizontal" />
+
+                    <EditText
+                        android:id="@+id/publish_cargo_end_detail_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/item_back"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/publish_cargo_end_detail_title"
+                        android:maxLines="1"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px"
+                        android:singleLine="true"
+                        android:textColor="@color/text3"
+                        android:textColorHint="@color/text9"
+                        android:textSize="@dimen/text_s" />
+
+                    <View style="@style/divider_horizontal" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/publish_cargo_map_title"
+                            android:textColor="@color/text3"
+                            android:textSize="@dimen/text_s" />
+
+                        <TextView
+                            android:id="@+id/publish_cargo_map_input"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10px"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_s" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <!--<View style="@style/divider_horizontal" />-->
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="55px"
+                    android:layout_height="match_parent"
+                    android:background="@color/green_light"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="@string/publish_cargo_detail_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_m"
+                    android:textStyle="bold" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <View style="@style/divider_horizontal" />
+
+                    <EditText
+                        android:id="@+id/publish_cargo_vehicle_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/item_back"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/publish_cargo_vehicle_title"
+                        android:maxLines="1"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px"
+                        android:textColor="@color/text3"
+                        android:textColorHint="@color/text9"
+                        android:textSize="@dimen/text_s" />
+
+                    <View style="@style/divider_horizontal" />
+
+                    <EditText
+                        android:id="@+id/publish_cargo_type_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/item_back"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/publish_cargo_type_title"
+                        android:maxLines="1"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px"
+                        android:textColor="@color/text3"
+                        android:textColorHint="@color/text9"
+                        android:textSize="@dimen/text_s" />
+
+                    <View style="@style/divider_horizontal" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px">
+
+                        <EditText
+                            android:id="@+id/publish_cargo_num_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/publish_cargo_num_title"
+                            android:textColor="@color/text3"
+                            android:textColorHint="@color/text9"
+                            android:textSize="@dimen/text_s" />
+
+                        <TextView
+                            android:id="@+id/publish_cargo_num_type_input"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10px"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@drawable/item_back"
+                            android:gravity="center_vertical"
+                            android:text="吨"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_s" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="20px"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="20px"
+                            android:background="@color/divider" />
+
+                        <TextView
+                            android:id="@+id/publish_cargo_num_switch_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20px"
+                            android:gravity="center_vertical"
+                            android:text="固定"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_s" />
+
+                        <Switch
+                            android:id="@+id/publish_cargo_num_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:checked="false" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <View style="@style/divider_horizontal" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px">
+
+                        <EditText
+                            android:id="@+id/publish_cargo_fee_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/publish_cargo_fee_title"
+                            android:textColor="@color/text3"
+                            android:textColorHint="@color/text9"
+                            android:textSize="@dimen/text_s" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10px"
+                            android:gravity="center_vertical"
+                            android:text="元/"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_s" />
+
+                        <TextView
+                            android:id="@+id/publish_cargo_fee_type_input"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@drawable/item_back"
+                            android:gravity="center_vertical"
+                            android:text="吨"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_s" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <View style="@style/divider_horizontal" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px">
+
+                        <EditText
+                            android:id="@+id/publish_cargo_load_fee_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/publish_cargo_load_fee_title"
+                            android:textColor="@color/text3"
+                            android:textColorHint="@color/text9"
+                            android:textSize="@dimen/text_s" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10px"
+                            android:gravity="center_vertical"
+                            android:text="元"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_s" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <View style="@style/divider_horizontal" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px">
+
+                        <EditText
+                            android:id="@+id/publish_cargo_unload_fee_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/publish_cargo_unload_fee_title"
+                            android:textColor="@color/text3"
+                            android:textColorHint="@color/text9"
+                            android:textSize="@dimen/text_s" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10px"
+                            android:gravity="center_vertical"
+                            android:text="元"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_s" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <View style="@style/divider_horizontal" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="55px"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="@string/publish_cargo_other_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_m"
+                    android:textStyle="bold" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <View style="@style/divider_horizontal" />
+
+                    <EditText
+                        android:id="@+id/publish_cargo_load_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/item_back"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/publish_cargo_load_title"
+                        android:maxLines="1"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px"
+                        android:textColor="@color/text3"
+                        android:textColorHint="@color/text9"
+                        android:textSize="@dimen/text_s" />
+
+                    <View style="@style/divider_horizontal" />
+
+                    <EditText
+                        android:id="@+id/publish_cargo_pay_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/item_back"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/publish_cargo_pay_title"
+                        android:maxLines="1"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px"
+                        android:textColor="@color/text3"
+                        android:textColorHint="@color/text9"
+                        android:textSize="@dimen/text_s" />
+
+                    <View style="@style/divider_horizontal" />
+
+                    <EditText
+                        android:id="@+id/publish_cargo_remark_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="90px"
+                        android:background="@color/white"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/item_back"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/publish_cargo_remark_title"
+                        android:maxLines="1"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px"
+                        android:textColor="@color/text3"
+                        android:textColorHint="@color/text9"
+                        android:textSize="@dimen/text_s" />
+
+                    <View style="@style/divider_horizontal" />
+
+                    <TextView
+                        android:id="@+id/publish_cargo_other_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:lineSpacingMultiplier="1.2"
+                        android:minHeight="180px"
+                        android:paddingLeft="16px"
+                        android:paddingRight="16px"
+                        android:textColor="@color/text3"
+                        android:textSize="@dimen/text_s" />
+
+                    <View style="@style/divider_horizontal" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal">
+
+                <com.zhy.autolayout.AutoFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:padding="1px">
+
+                    <TextView
+                        android:id="@+id/publish_cargo_resend_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/page_background"
+                        android:gravity="center"
+                        android:text="@string/publish_cargo_resend"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_s" />
+
+                </com.zhy.autolayout.AutoFrameLayout>
+
+                <View
+                    android:layout_width="30px"
+                    android:layout_height="match_parent" />
+
+                <com.zhy.autolayout.AutoFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:padding="1px">
+
+                    <TextView
+                        android:id="@+id/publish_cargo_regular_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/page_background"
+                        android:gravity="center"
+                        android:text="@string/publish_cargo_regular"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_s" />
+
+                </com.zhy.autolayout.AutoFrameLayout>
+
+                <View
+                    android:layout_width="30px"
+                    android:layout_height="match_parent" />
+
+                <com.zhy.autolayout.AutoFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:padding="1px">
+
+                    <TextView
+                        android:id="@+id/publish_cargo_city_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/page_background"
+                        android:gravity="center"
+                        android:text="@string/publish_cargo_city"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_s" />
+
+                </com.zhy.autolayout.AutoFrameLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/publish_cargo_confirm"
+                style="@style/confirm"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="40px"
+                android:text="@string/publish_cargo_confirm"
+                android:textStyle="bold" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/view_location_multi_bottom_dialog"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/view_location_single_bottom_dialog"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/view_option_multi_bottom_dialog"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/view_option_single_bottom_dialog"
+        android:visibility="gone" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

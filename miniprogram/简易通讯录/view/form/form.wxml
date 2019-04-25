@@ -1,0 +1,72 @@
+<view>
+  <button loading='{{loading}}' disabled='{{disabled}}' bindtap='switchState'>提交</button>
+</view>
+<checkbox-group bindchange="checkbox1Change">
+  <label style='display:block' wx:for="{{items1}}">
+    <checkbox value='{{item.name}}' checked='{{item.checked}}'></checkbox>
+    {{item.value}}
+  </label>
+</checkbox-group>
+
+<view style='margin-top:30rpx;margin-bottom:30rpx;border-top:1px solid #000'></view>
+
+<checkbox-group bindchange="checkbox2Change">
+  <label style='display:block' wx:for="{{items2}}">
+    <checkbox value='{{item.name}}' checked='{{item.checked}}'></checkbox>
+    {{item.value}}
+  </label>
+</checkbox-group>
+
+<form bindsubmit='formSubmitEvent' bindreset='formResetEvent'>
+  <view class='top'>
+    <input name="theInputValue" placeholder='在这里输入的内容会被form表单获取' auto-focus='true'></input>
+  </view>
+  <view class='top'>
+    <switch name='theSwitch'></switch>
+  </view>
+
+  <view class='top'>
+    <checkbox-group name="theCheckboxValue">
+      <label style='display:block'>
+        <checkbox value='checkbox1'></checkbox>
+        复选框1
+      </label>
+      <label style='display:block'>
+        <checkbox value='checkbox2'></checkbox>
+        复选框2
+      </label>
+    </checkbox-group>
+  </view>
+  <view class='top'>
+    <slider name='theSliderValue' show-value='true'></slider>
+  </view>
+
+  <view class='top'>
+    <radio-group name='radioValue'>
+      <label style='display:block'>
+        <radio value='radio1'></radio>单选框1
+      </label>
+      <label style='display:block;margin-top:20rpx'>
+        <radio value='radio2'></radio>单选框2
+      </label>
+    </radio-group>
+  </view>
+
+  <view class='top'>
+    <picker name="thePickerValue" range="{{['红色','蓝色','绿色','橙色','金色']}}">
+      <button size='mini'>点这里弹出picker选择器</button>
+    </picker>
+  </view>
+
+  <view calss='top'>
+    <textarea name="placeHolderValue" placeholder='这里可以输入多行文本' style='border:1px solid #CCCCCC;width:90%;margin:auto'></textarea>
+  </view>
+
+  <view class='top'>
+    <button form-type='submit'>提交</button>
+  </view>
+
+  <view class='top'>
+    <button form-type='reset'>重置</button>
+  </view>
+</form>

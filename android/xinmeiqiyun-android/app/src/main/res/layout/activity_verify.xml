@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_wrap"
+        android:background="@drawable/verify_background"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:orientation="horizontal"
+            android:paddingLeft="20px"
+            android:paddingRight="20px">
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:id="@+id/back"
+                android:layout_width="100px"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/title_back_white" />
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <TextView
+                style="@style/title_text"
+                android:text="@string/verify_home" />
+
+            <View
+                android:layout_width="100px"
+                android:layout_height="match_parent" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/verify_circle">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/verify_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="110px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:gravity="bottom"
+                        android:text="%"
+                        android:textColor="@color/white"
+                        android:textSize="52px" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45px"
+                android:text="@string/verify_progress"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_m" />
+
+            <TextView
+                android:id="@+id/verify_apply"
+                android:layout_width="480px"
+                android:layout_height="90px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45px"
+                android:background="@color/blue_deep"
+                android:gravity="center"
+                android:text="@string/verify_apply"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_m" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/bottom_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="25px"
+        android:paddingTop="25px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/personal_wrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/verify_personal"
+                android:drawablePadding="5dp"
+                android:text="@string/verify_personal"
+                android:textSize="@dimen/text_m"
+                android:textColor="@color/text3"/>
+
+            <TextView
+                android:id="@+id/personal_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/verify_complete"
+                android:textSize="@dimen/text_s"
+                android:textColor="@color/text3"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="200px"
+            android:background="@color/divider"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/company_wrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/verify_company"
+                android:drawablePadding="5dp"
+                android:text="@string/verify_company"
+                android:textSize="@dimen/text_m"
+                android:textColor="@color/text3"/>
+
+            <TextView
+                android:id="@+id/company_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/verify_complete"
+                android:textSize="@dimen/text_s"
+                android:textColor="@color/text3"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

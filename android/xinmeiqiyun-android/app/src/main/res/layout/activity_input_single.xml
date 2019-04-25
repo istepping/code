@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_button" />
+
+    <EditText
+        android:id="@+id/input"
+        style="@style/input_white"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:inputType="text" />
+
+    <View style="@style/divider_horizontal" />
+
+</com.zhy.autolayout.AutoLinearLayout>

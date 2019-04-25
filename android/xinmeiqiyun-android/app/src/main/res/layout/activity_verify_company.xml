@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_background"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_common" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/marginOrPadding_60">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/verify_progress_one_blue"
+                        android:gravity="center"
+                        android:text="@string/verify_personal"
+                        android:textColor="@color/blue" />
+
+                    <View
+                        android:layout_width="200px"
+                        android:layout_height="1px"
+                        android:background="@color/blue" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/verify_progress_two_blue"
+                        android:gravity="center"
+                        android:text="@string/verify_company"
+                        android:textColor="@color/blue" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View style="@style/divider_horizontal" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/verify_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="89px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/verify_company_name"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <TextView
+                        android:id="@+id/verify_company_name_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/marginOrPadding_20"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginOrPadding_40"
+                        android:src="@drawable/item_back" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View style="@style/divider_horizontal" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/verify_company_alias"
+                    android:layout_width="match_parent"
+                    android:layout_height="89px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/verify_company_alias"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <TextView
+                        android:id="@+id/verify_company_alias_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/marginOrPadding_20"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginOrPadding_40"
+                        android:src="@drawable/item_back" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/marginOrPadding_20"
+                    android:paddingRight="@dimen/marginOrPadding_20"
+                    android:text="@string/verify_company_alias_note"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_xx_xs" />
+
+                <View style="@style/divider_horizontal" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="89px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/verify_company_license"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="15px"
+                        android:paddingTop="15px">
+
+                        <CheckBox
+                            android:id="@+id/verify_company_license_true"
+                            style="@style/CustomCheckboxTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:paddingLeft="@dimen/marginOrPadding_40"
+                            android:text="@string/verify_chosen_is"
+                            android:textColor="@drawable/selector_tab_text"
+                            android:textSize="@dimen/text_s" />
+
+                        <CheckBox
+                            android:id="@+id/verify_company_license_false"
+                            style="@style/CustomCheckboxTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/marginOrPadding_40"
+                            android:text="@string/verify_chosen_not"
+                            android:textColor="@drawable/selector_tab_text"
+                            android:textSize="@dimen/text_s" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View style="@style/divider_horizontal" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/verify_company_license_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="160px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/verify_company_license_image"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <ImageView
+                        android:id="@+id/verify_company_license_image_detail"
+                        android:layout_width="183px"
+                        android:layout_height="136px"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/verify_upload_default" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:id="@+id/verify_company_license_divider"
+                    style="@style/divider_horizontal" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/verify_company_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="89px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/verify_company_code"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <TextView
+                        android:id="@+id/verify_company_code_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/drawablePadding_20"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginOrPadding_40"
+                        android:src="@drawable/item_back" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:id="@+id/verify_company_code_divider"
+                    style="@style/divider_horizontal" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/verify_company_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="89px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/verify_company_address"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <TextView
+                        android:id="@+id/verify_company_address_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/marginOrPadding_20"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginOrPadding_40"
+                        android:src="@drawable/item_back" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View style="@style/divider_horizontal" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/verify_company_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="89px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/verify_company_location"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <TextView
+                        android:id="@+id/verify_company_location_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/marginOrPadding_20"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="right|center_vertical"
+                        android:maxLines="1"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <ImageView
+                        android:id="@+id/verify_company_location_marker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginOrPadding_20"
+                        android:src="@drawable/verify_location" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View style="@style/divider_horizontal" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/verify_company_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="160px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/verify_company_shop"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <ImageView
+                        android:id="@+id/verify_company_shop_detail"
+                        android:layout_width="183px"
+                        android:layout_height="136px"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/verify_upload_default" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View style="@style/divider_horizontal" />
+
+                <View
+                    style="@style/divider_horizontal"
+                    android:layout_marginTop="15px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="89px"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/verify_mention"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:text="@string/verify_mention"
+                    android:textColor="@color/green"
+                    android:textSize="28px" />
+
+                <View style="@style/divider_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="20px"
+                    android:text="@string/verify_note"
+                    android:textColor="@color/text3"
+                    android:textSize="30px" />
+
+                <View style="@style/divider_horizontal" />
+
+                <TextView
+                    android:id="@+id/confirm"
+                    style="@style/confirm"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="40px"
+                    android:text="@string/verify_apply" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </ScrollView>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/upload_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/page_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/upload_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30px"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/text_m" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:background="@color/page_background"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="25px">
+
+                <ImageView
+                    android:id="@+id/upload_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/verify_upload_license"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/upload_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/verify_upload_shop"
+                    android:visibility="gone" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View style="@style/divider_horizontal" />
+
+            <TextView
+                android:id="@+id/upload_ok"
+                android:layout_width="match_parent"
+                android:layout_height="89px"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_m" />
+
+            <View style="@style/divider_horizontal" />
+
+            <TextView
+                android:id="@+id/upload_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="89px"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_m" />
+
+            <View style="@style/divider_horizontal" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include
+        layout="@layout/view_location_single_bottom_dialog"
+        android:visibility="gone" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

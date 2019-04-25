@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="126px"
+                android:background="@color/blue" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginOrPadding_20"
+                    android:layout_marginRight="@dimen/marginOrPadding_20"
+                    android:layout_marginTop="@dimen/marginOrPadding_20"
+                    android:background="@drawable/shape_container"
+                    android:orientation="vertical"
+                    android:padding="@dimen/marginOrPadding_30">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:layout_width="13px"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/drawablePadding_15"
+                            android:paddingTop="@dimen/marginOrPadding_15">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/cargo_circle" />
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_line_vertical"
+                                android:layerType="software" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/cargo_circle" />
+
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/marginOrPadding_20"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.zhy.autolayout.AutoLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/cargo_detail_location_start"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/text3"
+                                    android:textSize="@dimen/text_l" />
+
+                                <TextView
+                                    android:id="@+id/cargo_detail_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/text9"
+                                    android:textSize="@dimen/text_xxs" />
+
+                            </com.zhy.autolayout.AutoLinearLayout>
+
+                            <TextView
+                                android:id="@+id/cargo_detail_location_start_detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/marginOrPadding_20"
+                                android:layout_weight="1"
+                                android:textColor="@color/text6"
+                                android:textSize="@dimen/text_m" />
+
+                            <TextView
+                                android:id="@+id/cargo_detail_location_end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/marginOrPadding_35"
+                                android:layout_weight="1"
+                                android:textColor="@color/text3"
+                                android:textSize="@dimen/text_l" />
+
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <TextView
+                        android:id="@+id/cargo_detail_location_end_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginOrPadding_33"
+                        android:layout_marginTop="@dimen/marginOrPadding_20"
+                        android:layout_weight="1"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_m" />
+
+                    <com.xmw.qiyun.view.HorizontalListView
+                        android:id="@+id/cargo_detail_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_38"
+                        android:layout_marginLeft="@dimen/marginOrPadding_33"
+                        android:layout_marginTop="@dimen/marginOrPadding_35" />
+
+                    <TextView
+                        android:id="@+id/cargo_detail_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginOrPadding_35"
+                        android:background="@drawable/publish_map_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/marginOrPadding_20"
+                        android:paddingRight="@dimen/marginOrPadding_20"
+                        android:text="@string/publish_detail_map"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_s"
+                        android:visibility="gone" />
+
+                    <View
+                        style="@style/divider_horizontal"
+                        android:layout_marginTop="@dimen/marginOrPadding_30" />
+
+                    <TextView
+                        android:id="@+id/cargo_detail_mark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginOrPadding_20"
+                        android:drawableLeft="@drawable/cargo_mark"
+                        android:drawablePadding="@dimen/drawablePadding_20"
+                        android:gravity="center_vertical"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                    <View
+                        style="@style/divider_horizontal"
+                        android:layout_marginTop="@dimen/marginOrPadding_30" />
+
+                    <TextView
+                        android:id="@+id/cargo_detail_region"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginOrPadding_20"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:textColor="@color/text6"
+                        android:textSize="@dimen/text_s" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/marginOrPadding_20"
+                    android:background="@drawable/shape_container"
+                    android:orientation="vertical"
+                    android:padding="@dimen/marginOrPadding_30">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/cargo_detail_avatar"
+                            android:layout_width="@dimen/avatar_115"
+                            android:layout_height="@dimen/avatar_115"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/default_avatar" />
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginOrPadding_20"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/width_113"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/cargo_detail_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:maxWidth="300px"
+                                android:paddingLeft="@dimen/marginOrPadding_20"
+                                android:paddingRight="@dimen/marginOrPadding_20"
+                                android:textColor="@color/text6"
+                                android:textSize="@dimen/text_s" />
+
+                            <ImageView
+                                android:id="@+id/cargo_detail_verify"
+                                android:layout_width="@dimen/width_113"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:scaleType="fitStart" />
+
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                        <TextView
+                            android:id="@+id/cargo_detail_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginOrPadding_20"
+                            android:textColor="@color/text9"
+                            android:textSize="@dimen/text_xs" />
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginOrPadding_20"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/cargo_detail_page"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cargo_button_page"
+                                android:gravity="center"
+                                android:text="@string/cargo_detail_page"
+                                android:textColor="@color/yellow"
+                                android:textSize="@dimen/text_s" />
+
+                            <View
+                                android:layout_width="@dimen/width_35"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/cargo_detail_contact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cargo_button_contact"
+                                android:gravity="center"
+                                android:text="@string/cargo_detail_contact"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_s" />
+
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginOrPadding_20"
+                        android:gravity="center"
+                        android:text="@string/cargo_detail_tips"
+                        android:textColor="@color/text9"
+                        android:textSize="@dimen/text_xxs" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoFrameLayout>
+
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

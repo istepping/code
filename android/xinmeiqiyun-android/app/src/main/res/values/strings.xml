@@ -1,0 +1,290 @@
+<resources>
+
+    <string name="app_name">新煤汽运货主</string>
+    <string name="image_des">图片容器描述</string>
+
+    <string name="welcome_button">立即体验</string>
+
+    <string name="app">新煤汽运</string>
+    <string name="goods_owner">货主</string>
+    <string name="login_phone_input">请输入手机号</string>
+    <string name="login_image_input">请输入图形验证码</string>
+    <string name="login_code_input">请输入短信验证码</string>
+    <string name="login_code_get">获取验证码</string>
+    <string name="login_confirm">登录</string>
+    <string name="login_recover">忘记密码</string>
+    <string name="login_register">注册货主</string>
+
+    <string name="register_title">注册账号</string>
+    <string name="register_phone">注册手机号</string>
+    <string name="register_image">图形验证码</string>
+    <string name="register_code">短信验证码</string>
+    <string name="register_confirm">注册</string>
+
+    <string name="verify_title">认证信息</string>
+    <string name="verify_home">认证</string>
+    <string name="verify_progress">信息完整度</string>
+    <string name="verify_next">下一步</string>
+    <string name="verify_apply">申请认证</string>
+    <string name="verify_personal">个人信息</string>
+    <string name="verify_company">公司信息</string>
+    <string name="verify_mention">安全提示</string>
+    <string name="verify_personal_name">姓名</string>
+    <string name="verify_personal_code">身份证号</string>
+    <string name="verify_personal_code_error">身份证号错误</string>
+    <string name="verify_personal_auth">身份验证</string>
+    <string name="verify_personal_image">身份证照</string>
+    <string name="verify_personal_card">名片照</string>
+    <string name="verify_company_name">公司全称</string>
+    <string name="verify_company_alias">公司简称</string>
+    <string name="verify_company_alias_note">公司简称用于公司名片展示，若不填则展示公司全称</string>
+    <string name="verify_company_license">营业执照</string>
+    <string name="verify_company_license_image">营业执照照片</string>
+    <string name="verify_company_code">信用代码／注册号</string>
+    <string name="verify_company_address">所在地</string>
+    <string name="verify_company_location">详细地址</string>
+    <string name="verify_company_shop">门店照</string>
+    <string name="verify_note">新煤汽运的每位用户都是实名加入，我们承诺绝不泄漏用户的任何信息。</string>
+    <string name="verify_complete">完成：0%</string>
+    <string name="verify_complete_title">完成：</string>
+    <string name="verify_personal_image_toast_1">请使用身份证原件拍，五官可见，证件文字清晰.</string>
+    <string name="verify_personal_image_toast_2">名片照姓名需与注册人姓名一致，且包含（注册填写的门店地址，联系电话，与门店照一致的门店名).</string>
+    <string name="verify_company_image_toast_1">使用营业执照原件拍摄，证件文字清晰可见.</string>
+    <string name="verify_company_image_toast_2">店招文字清晰.</string>
+    <string name="verify_image_error_1">非证件照</string>
+    <string name="verify_image_error_2">证件不完整</string>
+    <string name="verify_image_error_3">模糊不清</string>
+    <string name="verify_apply_error">请先补全信息</string>
+    <string name="verify_apply_driver_error">请先补全个人信息</string>
+    <string name="verify_chosen_is">有</string>
+    <string name="verify_chosen_not">没有</string>
+
+    <string name="information_title">基本信息</string>
+    <string name="information_avatar">头像</string>
+    <string name="information_name">姓名</string>
+    <string name="information_company_name">公司名称</string>
+    <string name="approve_truck_id_select">请选择车牌号</string>
+    <string name="approve_truck_id_check">车牌号格式错误</string>
+    <string name="information_company_address">所在地</string>
+    <string name="information_company_location">详细地址</string>
+    <string name="information_contact">联系方式</string>
+    <string name="information_complete">完成</string>
+
+    <string name="store_title">商城</string>
+
+    <string name="setting_title">设置</string>
+    <string name="setting_cache">清理缓存</string>
+    <string name="setting_cache_clear">缓存已清理</string>
+    <string name="setting_about">关于我们</string>
+    <string name="setting_about_phone">客服电话</string>
+    <string name="setting_about_text">服务协议</string>
+    <string name="setting_about_text_error">暂无服务协议</string>
+    <string name="setting_update">版本检测</string>
+    <string name="setting_update_last">已经是最新版本</string>
+    <string name="setting_update_check">检测版本</string>
+    <string name="setting_update_text">发现新版本</string>
+    <string name="setting_update_title">更新内容</string>
+    <string name="setting_update_cancel">以后再说</string>
+    <string name="setting_update_ok">立即更新</string>
+    <string name="setting_logout">退出账号</string>
+
+    <string name="tab_publish">发货</string>
+    <string name="tab_cargo">找货</string>
+    <string name="tab_truck">车库</string>
+    <string name="tab_price">运价</string>
+    <string name="tab_me">我的</string>
+
+    <string name="truck_title">车源信息</string>
+    <string name="truck_detail_title">车主详情</string>
+    <string name="truck_detail_no_num">暂无车牌号</string>
+    <string name="truck_detail_no_property">暂无车辆信息</string>
+    <string name="truck_detail_no_city">暂无常跑城市</string>
+    <string name="truck_detail_page">车主主页</string>
+    <string name="truck_detail_contact">联系车主</string>
+
+    <string name="publish_tab_1">发货</string>
+    <string name="publish_tab_2">已发货</string>
+    <string name="publish_tab_3">常发货源</string>
+
+    <string name="publish_cargo_address_title">地\n址\n信\n息</string>
+    <string name="publish_cargo_detail_title">详\n细\n信\n息</string>
+    <string name="publish_cargo_other_title">其\n他\n信\n息</string>
+
+    <string name="publish_cargo_start_title">请选择起始地</string>
+    <string name="publish_cargo_start_detail_title">请输入起始地详细信息</string>
+    <string name="publish_cargo_end_title">请选择到达地</string>
+    <string name="publish_cargo_end_detail_title">请输入到达地详细信息</string>
+    <string name="publish_cargo_map_title">预计里程约：</string>
+    <string name="publish_cargo_map_km">公里</string>
+
+    <string name="publish_cargo_vehicle_title">请选择车长车型</string>
+    <string name="publish_cargo_type_title">请选择货物种类</string>
+    <string name="publish_cargo_num_title">请输入货物数量</string>
+    <string name="publish_cargo_num_min">最小</string>
+    <string name="publish_cargo_num_max">最大</string>
+    <string name="publish_cargo_num_single">固定</string>
+    <string name="publish_cargo_num_multi">范围</string>
+    <string name="publish_cargo_fee_title">请输入货物运费</string>
+    <string name="publish_cargo_load_fee_title">请输入装车费</string>
+    <string name="publish_cargo_unload_fee_title">请输入卸车费</string>
+
+    <string name="publish_cargo_load_title">请选择装货方式</string>
+    <string name="publish_cargo_pay_title">请选择付款方式</string>
+    <string name="publish_cargo_remark_title">其他备注</string>
+
+    <string name="remark_vehicle_length">车长：</string>
+    <string name="remark_vehicle_type">车型：</string>
+    <string name="remark_goods_type">货物种类：</string>
+    <string name="remark_goods_num">货物数量：</string>
+    <string name="remark_goods_fee">货物运费：</string>
+    <string name="remark_load_fee">装车费：</string>
+    <string name="remark_unload_fee">卸车费：</string>
+    <string name="remark_assembly">装货方式：</string>
+    <string name="remark_payment">付款方式：</string>
+    <string name="remark_remark">其他备注：</string>
+
+    <string name="publish_cargo_resend">不重发</string>
+    <string name="publish_cargo_resend_count">次</string>
+    <string name="publish_cargo_resend_time">分钟</string>
+    <string name="publish_cargo_regular">存为常发货源</string>
+    <string name="publish_cargo_city">不可见城市</string>
+
+    <string name="publish_cargo_confirm">确定发布</string>
+    <string name="publish_cargo_check">始发地或到达地不能为空</string>
+
+    <string name="publish_stream_tab_1">待审核</string>
+    <string name="publish_stream_tab_2">发布中</string>
+    <string name="publish_stream_tab_3">已关闭</string>
+
+    <string name="publish_stream_no_time">暂无发布时间</string>
+    <string name="publish_stream_share">发到微信</string>
+    <string name="publish_stream_share_circle">发到朋友圈</string>
+    <string name="publish_stream_edit">编辑</string>
+    <string name="publish_stream_send">发布</string>
+    <string name="publish_stream_resend">重发</string>
+    <string name="publish_stream_close">关闭</string>
+    <string name="publish_stream_delete">删除</string>
+
+    <string name="publish_detail_map">预计里程约：</string>
+    <string name="publish_detail_km">公里</string>
+    <string name="publish_detail_from">来自</string>
+
+    <string name="cargo_title">货源信息</string>
+    <string name="cargo_owner_title">货主名片</string>
+    <string name="cargo_start">起始地</string>
+    <string name="cargo_end">到达地</string>
+    <string name="cargo_location">地区选择</string>
+    <string name="cargo_nation">全国</string>
+    <string name="cargo_limit">不限</string>
+    <string name="cargo_search">定制搜索</string>
+    <string name="cargo_input">请输入自定义车长</string>
+    <string name="cargo_type">车型</string>
+    <string name="cargo_length">车长</string>
+    <string name="cargo_company">请输入公司简称</string>
+
+    <string name="cargo_detail_title">货源详情</string>
+    <string name="cargo_detail_category">类别</string>
+    <string name="cargo_detail_mark">备注</string>
+    <string name="cargo_detail_information">详细资料 > </string>
+    <string name="cargo_detail_tips">联系时，请说明消息来自新煤汽运</string>
+    <string name="cargo_detail_no_remark">暂无备注</string>
+    <string name="cargo_detail_page">货主主页</string>
+    <string name="cargo_detail_contact">联系货主</string>
+
+    <string name="cargo_master_title">货主详情</string>
+    <string name="cargo_master_location">货主定位</string>
+    <string name="cargo_master_no_company">暂无公司信息</string>
+    <string name="cargo_master_no_position">暂无定位信息</string>
+
+    <string name="price_title">汽运价格</string>
+    <string name="price_tab_1">三西</string>
+    <string name="price_tab_2">内蒙古</string>
+    <string name="price_tab_3">山西</string>
+    <string name="price_tab_4">陕西</string>
+    <string name="price_tab_5">省内</string>
+    <string name="price_tab_6">跨省</string>
+
+    <string name="agreement_total">点击注册，即表示您已阅读并同意《新煤汽运货主服务协议》及《新煤汽运隐私保护协议》。</string>
+    <string name="agreement_service">新煤汽运货主服务协议</string>
+    <string name="agreement_secret">新煤汽运隐私保护协议</string>
+
+    <string name="map_vehicle_title">车主地图</string>
+    <string name="map_cargo_title">货主地图</string>
+    <string name="map_vehicle">车长车型：</string>
+    <string name="map_city">常跑城市：</string>
+    <string name="map_time">最后一次定位时间：</string>
+
+    <string name="location_title">添加常跑城市</string>
+    <string name="location_has_select_three">已选择（最多选择3个）:</string>
+    <string name="location_has_select_five">已选择（最多选择5个）:</string>
+    <string name="location_please_select">请选择:</string>
+    <string name="location_back">返回上一级</string>
+
+    <string name="position_doing">定位中</string>
+    <string name="position_success">定位成功</string>
+    <string name="position_fail">定位失败,请开启定位服务</string>
+
+    <string name="no_data">暂无数据</string>
+    <string name="save">保存</string>
+    <string name="add">添加</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="toast_wrong_phone">手机号码格式错误</string>
+    <string name="toast_wrong_image">图形验证码格式错误</string>
+    <string name="toast_code_get_again">再次获取</string>
+    <string name="toast_verify_fail">认证信息获取失败</string>
+
+    <string name="toast_image_1">请上传真实头像</string>
+    <string name="toast_image_2">（以下图片不会通过审核哦）</string>
+    <string name="image_error_1">非人物照</string>
+    <string name="image_error_2">五官遮挡</string>
+    <string name="image_error_3">模糊不清</string>
+    <string name="image_error_4">倾斜颠倒</string>
+    <string name="image_error_5">非头部照</string>
+
+    <string name="toast_up">达到选择上限</string>
+    <string name="toast_empty">输入值不可为空</string>
+    <string name="toast_invalid">输入值不合法</string>
+    <string name="toast_city_empty">请选择地区</string>
+    <string name="toast_network_error">网络连接不可用</string>
+
+    <string name="dialog_phone_title">拨打电话</string>
+    <string name="dialog_phone_message">是否拨打以下电话：</string>
+    <string name="dialog_phone_positive">拨打电话</string>
+    <string name="dialog_phone_negative">取消</string>
+
+    <string name="dialog_crash_title">系统异常</string>
+    <string name="dialog_crash_message">该应用出现异常，是否上传该异常</string>
+    <string name="dialog_crash_positive">上传异常</string>
+    <string name="dialog_crash_negative">取消</string>
+
+    <string name="dialog_login_title">重新登录</string>
+    <string name="dialog_login_message">是否重新登录</string>
+    <string name="dialog_login_positive">确定</string>
+    <string name="dialog_login_negative">取消</string>
+
+    <string name="dialog_logout_title">退出程序</string>
+    <string name="dialog_logout_message">是否退出程序</string>
+    <string name="dialog_logout_positive">确定</string>
+    <string name="dialog_logout_negative">取消</string>
+
+    <string name="dialog_vehicle_length">车长</string>
+    <string name="dialog_vehicle_type">车型</string>
+    <string name="dialog_resend_count">重发次数</string>
+    <string name="dialog_resend_time">重发间隔</string>
+
+    <string name="dialog_vehicle_title">请输入新增车长</string>
+    <string name="dialog_vehicle_limit">不能超过20米</string>
+    <string name="dialog_vehicle_tip">已添加车长（点击可删除）</string>
+    <string name="dialog_type_title">请输入新增货物类型</string>
+    <string name="dialog_type_limit">不能超过4个字</string>
+    <string name="dialog_type_tip">已添加货物类型（点击可删除）</string>
+    <string name="dialog_add">添加</string>
+    <string name="dialog_close">关闭</string>
+
+    <string name="dialog_input_invalid">输入值不能为空</string>
+    <string name="dialog_vehicle_invalid">该车长已存在</string>
+    <string name="dialog_type_invalid">该货物类型已存在</string>
+
+</resources>

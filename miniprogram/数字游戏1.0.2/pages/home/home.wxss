@@ -1,0 +1,75 @@
+page{
+  height:100%;
+  width: 100%;
+  background-image: url("https://upload-images.jianshu.io/upload_images/7795819-9968db28d8c13367.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.containter{
+  height: 100%;
+  width: 100%;
+}
+.containter .line1{
+  margin-top: 5%;
+  width: 100%;
+  height:auto;
+  display:flex;
+  justify-content: center;
+}
+.containter .line1 .btn{
+  width: 16%;
+  background-color: #1E90FF;
+}
+.containter .line2{
+  margin-top: 10%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center; 
+}
+.containter .line2 .btn{
+  width: 10%;
+  text-align: center;
+}
+.containter .input{
+  width: 80%;
+  height:10%;
+  border: 1px solid #e1e1e1;
+  margin:10% auto;
+}
+.containter .line3{
+  width: 100%;
+  margin-top: 10%;
+  height:auto;
+  display:flex;
+  justify-content: center;
+}
+.containter .line3 .btn{
+  width: 25%;
+  background-color: #1E90FF;
+}
+.containter .line4_button{
+  margin-top: 25%;
+  text-align: center;
+  width: 50%;
+}
+.containter .line4_text{
+  margin-top: 15%;
+  text-align: center;
+  width: 100%;
+}
+.containter .top{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.containter .top .img1{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 10px;  
+}
+.containter .top .img2{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 10px;
+}

@@ -1,0 +1,14 @@
+.top{
+  margin: 30rpx 10rpx 10rpx 10rpx;
+  text-align: center;
+}
+.inputStyle{
+  border: 1px solid #CCCCCC;
+  border-radius: 7px;
+  margin: 20rpx;
+  padding: 20rpx;
+  height: 100rpx;
+}
+.imgStyle{
+  margin: auto;
+}

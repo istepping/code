@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_80"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/marginOrPadding_15"
+        android:paddingLeft="@dimen/marginOrPadding_20"
+        android:paddingRight="@dimen/marginOrPadding_20"
+        android:paddingTop="@dimen/marginOrPadding_15">
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/selector_search_arrow"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/cargo_nation"
+            android:textColor="@color/text3"
+            android:textSize="@dimen/text_xs" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/marginOrPadding_15"
+            android:layout_marginRight="@dimen/marginOrPadding_15"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableRight="@drawable/selector_search_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/cargo_search"
+            android:textColor="@color/text3"
+            android:textSize="@dimen/text_xs" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+</com.zhy.autolayout.AutoLinearLayout>
